@@ -13,3 +13,19 @@ It ensures that change is handled in a way that can be explained later.
 ## License
 
 Apache-2.0
+
+## Usage
+
+```python
+from taalf.engine import TAALFEngine
+
+engine = TAALFEngine()
+
+result = engine.run(
+    delta_s="価格改定の相談",
+    domain="sales",
+    scope="cross",
+    inertia="high"
+)
+
+print(result)
